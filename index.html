@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aphex Twin Fan Site</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="particles-bg"></canvas>
+  <header class="hero">
+    <h1 class="glitch">Aphex Twin</h1>
+    <p>Портал в мир IDM и эмбиента</p>
+  </header>
+  <main>
+    <section id="about" class="glass-card">
+      <h2>О Richard D. James</h2>
+      <p>Richard David James, известный как Aphex Twin, британский музыкант и композитор, родился 18 августа 1971 года. Его работы в жанрах эмбиент, IDM и экспериментальной электроники оказали значительное влияние на современную электронную музыку.</p>
+    </section>
+    <section id="discography" class="glass-card">
+      <h2>Дискография (избранное)</h2>
+      <ul>
+        <li>Selected Ambient Works 85–92 (1992)</li>
+        <li>...I Care Because You Do (1995)</li>
+        <li>Richard D. James Album (1996)</li>
+        <li>Come to Daddy (EP, 1997)</li>
+        <li>Windowlicker (Single, 1999)</li>
+        <li>Drukqs (2001)</li>
+        <li>Syro (2014)</li>
+        <li>Cheetah (EP, 2016)</li>
+        <li>Collapse (EP, 2018)</li>
+        <li>Blackbox Life Recorder 21f (Single, 2023)</li>
+      </ul>
+    </section>
+    <section id="news" class="glass-card">
+      <h2>Новости</h2>
+      <ul>
+        <li>Supreme x Aphex Twin Spring 2025 Collaboration – коллекция вышла в марте 2025 года<!-- user to update links -->.</li>
+        <li>Новый компиляционный релиз с участием Aphex Twin запланирован на 25 августа 2025 года<!-- user to update links -->.</li>
+        <li>Редкие синтезаторы, когда-то принадлежащие Aphex Twin, появляются на аукционах<!-- user to update links -->.</li>
+      </ul>
+    </section>
+    <section id="audio" class="glass-card">
+      <h2>Аудио</h2>
+      <p>Положите файлы <code>audio/xtal.mp3</code> и <code>audio/alberto_balsalm.mp3</code> в папку <code>audio</code> рядом с этим файлом, чтобы включить плееры ниже.</p>
+      <audio controls id="audio-xtal" src="audio/xtal.mp3"></audio>
+      <div id="visualizer-xtal" class="visualizer"></div>
+      <audio controls id="audio-alberto" src="audio/alberto_balsalm.mp3"></audio>
+      <div id="visualizer-alberto" class="visualizer"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
