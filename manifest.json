@@ -1,0 +1,21 @@
+{
+    "name": "Aphex Twin Fan Site",
+    "short_name": "AT Fan Site",
+    "description": "Explore the world of Aphex Twin with news, discography, and interactive audio visualizations",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f0c29",
+    "theme_color": "#0f0c29",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
