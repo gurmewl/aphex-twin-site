@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aphex Twin Fan Site</title>
+  <!-- SEO improvements -->
+  <meta name="description" content="Aphex Twin fan site featuring news, discography, and audio visualizations.">
+  <meta name="keywords" content="Aphex Twin, IDM, Ambient, Music, Fan Site">
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Aphex Twin Fan Site">
+  <meta property="og:description" content="Портал в мир IDM и эмбиента">
+  <meta property="og:image" content="path-to-thumbnail-image.jpg"><!-- Update with actual image -->
   <link rel="stylesheet" href="style.css">
+  <!-- Consider reducing font weights/styles if performance is a concern -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,11 +20,20 @@
   <header class="hero">
     <h1 class="glitch">Aphex Twin</h1>
     <p>Портал в мир IDM и эмбиента</p>
+    <!-- Example navigation for accessibility and UX -->
+    <nav>
+      <ul>
+        <li><a href="#about">О музыканте</a></li>
+        <li><a href="#discography">Дискография</a></li>
+        <li><a href="#news">Новости</a></li>
+        <li><a href="#audio">Аудио</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section id="about" class="glass-card">
       <h2>О Richard D. James</h2>
-      <p>Richard David James, известный как Aphex Twin, британский музыкант и композитор, родился 18 августа 1971 года. Его работы в жанрах эмбиент, IDM и экспериментальной электроники оказали значительное влияние на современную электронную музыку.</p>
+      <p>Richard David James, известный как Aphex Twin, британский музыкант и композитор, родился 18 августа 1971 года. Его работы оказали значительное влияние на развитие жанров IDM и эмбиент.</p>
     </section>
     <section id="discography" class="glass-card">
       <h2>Дискография (избранное)</h2>
@@ -36,20 +53,37 @@
     <section id="news" class="glass-card">
       <h2>Новости</h2>
       <ul>
-        <li>Supreme x Aphex Twin Spring 2025 Collaboration – коллекция вышла в марте 2025 года<!-- user to update links -->.</li>
-        <li>Новый компиляционный релиз с участием Aphex Twin запланирован на 25 августа 2025 года<!-- user to update links -->.</li>
-        <li>Редкие синтезаторы, когда-то принадлежащие Aphex Twin, появляются на аукционах<!-- user to update links -->.</li>
+        <li>
+          Supreme x Aphex Twin Spring 2025 Collaboration – коллекция вышла в марте 2025 года.
+          <a href="https://example.com/supreme-aphex-twin-2025" target="_blank" rel="noopener">Подробнее</a>
+        </li>
+        <li>
+          Новый компиляционный релиз с участием Aphex Twin запланирован на 25 августа 2025 года.
+          <a href="https://example.com/new-compilation-2025" target="_blank" rel="noopener">Подробнее</a>
+        </li>
+        <li>
+          Редкие синтезаторы, когда-то принадлежащие Aphex Twin, появляются на аукционах.
+          <a href="https://example.com/rare-synths-auction" target="_blank" rel="noopener">Подробнее</a>
+        </li>
       </ul>
     </section>
     <section id="audio" class="glass-card">
       <h2>Аудио</h2>
-      <p>Положите файлы <code>audio/xtal.mp3</code> и <code>audio/alberto_balsalm.mp3</code> в папку <code>audio</code> рядом с этим файлом, чтобы включить плееры ниже.</p>
-      <audio controls id="audio-xtal" src="audio/xtal.mp3"></audio>
+      <p>Положите файлы <code>audio/xtal.mp3</code> и <code>audio/alberto_balsalm.mp3</code> в папку <code>audio</code> рядом с этим файлом, чтобы включить проигрыватель.</p>
+      <audio controls id="audio-xtal" src="audio/xtal.mp3">
+        Ваш браузер не поддерживает элемент audio.
+      </audio>
       <div id="visualizer-xtal" class="visualizer"></div>
-      <audio controls id="audio-alberto" src="audio/alberto_balsalm.mp3"></audio>
+      <audio controls id="audio-alberto" src="audio/alberto_balsalm.mp3">
+        Ваш браузер не поддерживает элемент audio.
+      </audio>
       <div id="visualizer-alberto" class="visualizer"></div>
     </section>
   </main>
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Aphex Twin Fan Site</p>
+  </footer>
+  <!-- Use defer for better performance -->
+  <script src="script.js" defer></script>
 </body>
 </html>
