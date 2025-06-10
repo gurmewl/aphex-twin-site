@@ -3,10 +3,18 @@
 Это шаблон статического сайта, посвященного Aphex Twin.
 
 ## Структура
-- index.html
-- style.css
-- script.js
-- audio/
+aphex-twin-site/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── audio/
+│   ├── xtal.mp3
+│   └── alberto_balsalm.mp3
+└── assets/          
+    ├── images/
+    └── fonts/
+
   - Добавьте сюда ваши файлы `xtal.mp3` и `alberto_balsalm.mp3` или другие треки.
 
 ## Как использовать
