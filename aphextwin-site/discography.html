@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aphex Twin - Discography</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/brutalist.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+</head>
+<body>
+  <div id="nav-container">
+    <div id="nav-toggle">☰</div>
+    <nav id="radial-menu" aria-label="Site Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Biography</a>
+      <a href="discography.html">Discography</a>
+      <a href="fun-facts.html">Fun Facts</a>
+      <a href="secret.html" id="secret-link" style="display:none;">Secret</a>
+    </nav>
+  </div>
+  <section id="discography-hero">
+    <h1>Discography</h1>
+  </section>
+  <section id="albums-grid">
+    <!-- Example album card; duplicate and edit -->
+    <div class="album-card">
+      <img src="assets/images/album-covers/SelectedAmbientWorks1.jpg" alt="Selected Ambient Works 85-92">
+      <h3>Selected Ambient Works 85-92</h3>
+      <p>1992</p>
+      <button class="play-btn" data-audio="assets/audio/SAW1_sample.mp3">Play Sample</button>
+    </div>
+  </section>
+  <canvas id="visualizer-canvas"></canvas>
+  <script type="module" src="assets/scripts/audioVisualizer.js"></script>
+  <script>
+    document.querySelectorAll('.play-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const audioUrl = btn.dataset.audio;
+        import('./assets/scripts/audioVisualizer.js').then(module => {
+          module.playAndVisualize(audioUrl);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

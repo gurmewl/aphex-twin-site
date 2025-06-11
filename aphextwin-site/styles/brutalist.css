@@ -1,0 +1,52 @@
+/* styles/brutalist.css */
+/* Neobrutalist UI elements */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+button {
+  font-family: inherit;
+  background: transparent;
+  border: 2px solid var(--primary-border);
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+#nav-container {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+}
+#nav-toggle {
+  border: 2px solid var(--primary-border);
+  padding: 0.5em;
+  cursor: pointer;
+}
+#radial-menu {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+#radial-menu.open {
+  opacity: 1;
+  pointer-events: all;
+}
+#radial-menu a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  text-align: center;
+  border: 2px solid var(--primary-border);
+  padding: 0.5em;
+  background: var(--primary-bg);
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aphex Twin - Fun Facts</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/brutalist.css">
+</head>
+<body>
+  <div id="nav-container">
+    <div id="nav-toggle">☰</div>
+    <nav id="radial-menu" aria-label="Site Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Biography</a>
+      <a href="discography.html">Discography</a>
+      <a href="fun-facts.html">Fun Facts</a>
+      <a href="secret.html" id="secret-link" style="display:none;">Secret</a>
+    </nav>
+  </div>
+  <section id="fun-hero">
+    <h1>Fun Facts</h1>
+  </section>
+  <section id="facts-list">
+    <div class="fact-card">
+      <p>He once released an album teaser via graffiti and a blimp flying over London! Can you find all the clues?</p>
+      <button class="reveal-btn">Reveal More</button>
+      <div class="more-info" style="display:none;">
+        <p>That teaser was for “Syro” in 2014.</p>
+      </div>
+    </div>
+    <div class="fact-card">
+      <p>He uploaded many demos anonymously on SoundCloud. True or False?</p>
+      <button class="quiz-btn">Show Answer</button>
+      <div class="quiz-answer" style="display:none;">
+        <p>True. In 2015 he anonymously uploaded many demos.</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.querySelectorAll('.reveal-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const more = btn.nextElementSibling;
+        more.style.display = more.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+    document.querySelectorAll('.quiz-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const ans = btn.nextElementSibling;
+        ans.style.display = ans.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
