@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aphex Twin Fan Site</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/brutalist.css">
+  <style>
+    @font-face {
+      font-family: 'BrutalMono';
+      src: url('assets/fonts/BrutalMono.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+    :root {
+      --primary-bg: #f0f0f0;
+      --primary-border: #000;
+      --accent-color: #ff00ff;
+      --text-color: #000;
+      --dark-bg: #111;
+      --dark-text: #eee;
+    }
+    body.dark-mode {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'BrutalMono', monospace;
+      background: var(--primary-bg);
+      color: var(--text-color);
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle dark mode">Toggle Theme</button>
+  <div id="nav-container">
+    <div id="nav-toggle">☰</div>
+    <nav id="radial-menu" aria-label="Site Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Biography</a>
+      <a href="discography.html">Discography</a>
+      <a href="fun-facts.html">Fun Facts</a>
+      <a href="secret.html" id="secret-link" style="display:none;">Secret</a>
+    </nav>
+  </div>
+  <section id="hero">
+    <canvas id="three-canvas"></canvas>
+    <div id="hero-text">
+      <h1>APHEX TWIN</h1>
+      <p>Pioneer of Experimental Sound</p>
+    </div>
+  </section>
+  <script type="module" src="assets/scripts/threeScene.js"></script>
+  <script src="assets/scripts/interactions.js"></script>
+</body>
+</html>

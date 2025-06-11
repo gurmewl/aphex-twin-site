@@ -1,0 +1,33 @@
+/* styles/style.css */
+/* Basic resets and layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'BrutalMono', monospace;
+}
+section {
+  padding: 4rem 2rem;
+  border-top: 2px solid var(--primary-border);
+}
+#hero, #discography-hero, #fun-hero {
+  text-align: center;
+}
+#albums-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.album-card {
+  border: 2px solid var(--primary-border);
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+.album-card img {
+  max-width: 100%;
+  border: 2px solid var(--primary-border);
+}
+#visualizer-canvas {
+  width: 100%;
+  display: block;
+}
